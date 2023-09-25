@@ -101,7 +101,7 @@ title_style = """
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     margin-top: 5px;
 """
 st.markdown(
