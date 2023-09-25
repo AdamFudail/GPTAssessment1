@@ -1,6 +1,5 @@
 accelerate==0.23.0
 diffusers==0.21.2
-ffmpeg==1.4
 openai==0.28.0
 requests==2.31.0
 stqdm==0.0.5
