@@ -110,7 +110,7 @@ st.markdown(
 
 
 
-col2 = st.columns(5])
+col2 = st.columns([5])
 
 
 form = col2.form
