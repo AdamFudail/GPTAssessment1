@@ -104,7 +104,7 @@ title = """
     margin-bottom: 10px;
 """
 st.markdown(
-    f'<h1 style="{title_style}">ChemAI</h1>',
+    f'<h1 style="{title}">ChemAI</h1>',
     unsafe_allow_html=True
 )
 col1, col2 = st.columns([5,5])
