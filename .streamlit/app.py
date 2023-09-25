@@ -3,7 +3,6 @@ import openai
 import torch
 import streamlit as st
 from stqdm import stqdm
-from diffusers import DiffusionPipeline
 
 
 st.set_page_config(
@@ -26,8 +25,7 @@ if submitted_key:
       st.warning(f'Invalid OpenAI API key: {e}')
 
 
-#%%
-#GPT-3.5-Paramters
+
 #(A) Element Generator
 element_gen = """
 Generate a short summary for any element. This AI will output The name of an element,
@@ -44,26 +42,6 @@ Element_response1 = """
 Oxygen is Earth's most abundant element, and after hydrogen and helium,
 it is the third-most abundant element in the universe. At standard temperature and pressure,
 two atoms of the element bind to form dioxygen, a colorless and odorless diatomic gas with the formula O. 2.
-"""
-
-element_user2 = """
-Can you give me a summary of neon?
-"""
-
-element_response2 = """
-Neon is a chemical element with the symbol Ne and atomic number 10. It is a noble gas. Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about two-thirds the density of air.
-It was discovered (along with krypton and xenon) in 1898 as one of the three residual rare inert elements remaining in dry air, after nitrogen, oxygen, argon and carbon dioxide were removed.
-Neon was the second of these three rare gases to be discovered and was immediately recognized as a new element from its bright red emission spectrum.
-The name neon is derived from the Greek word, νέον, neuter singular form of νέος (neos), meaning 'new'.
-Neon is chemically inert, and no uncharged neon compounds are known. The compounds of neon currently known include ionic molecules, molecules held together by van der Waals forces and clathrates.
-"""
-
-element_user3 = """
-Can you give me the boiling points of iron?
-"""
-
-element_response3 = """
-Iron has a Boiling Point of 2861°C, meaning at 2861°C it will turn to a Gas.
 """
 
 
@@ -87,27 +65,6 @@ def element_ai(text_input):
             "role":"assistant",
             "content": Element_response1
         },
-
-        {
-            "role":"user",
-            "content" : element_user2
-        },
-
-        {
-            "role":"assistant",
-            "content": element_response2
-        },
-
-        {
-            "role":"user",
-            "content" : element_user3
-        },
-
-        {
-            "role":"assistant",
-            "content": element_response3
-        },
-
         {
             "role":"user",
             "content" : text_input
@@ -138,7 +95,7 @@ I am ChemAI who is your chemistry assistant which able to help with your homewor
 Ask me anything about elements in the periodic table.
 """
 
-st.markdown("<h1 style='text-align: center; color: white;'>ChemAI</h1>", unsafe_allow_html=True)
+st.title('CHEMAI')
 col1, col2 = st.columns([5,5])
 
 col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
