@@ -95,7 +95,7 @@ I am ChemAI who is your chemistry assistant which able to help with your homewor
 Ask me anything about elements in the periodic table.
 """
 
-title_style = """
+title = """
     font-size: 48px;
     font-weight: bold;
     color: #FFFFFF;
