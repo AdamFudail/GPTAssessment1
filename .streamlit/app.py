@@ -107,9 +107,11 @@ st.markdown(
     f'<h1 style="{title}">ChemAI</h1>',
     unsafe_allow_html=True
 )
+
+
+
 col2 = st.columns(5])
 
-st.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
 form = col2.form
 
