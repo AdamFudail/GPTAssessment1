@@ -112,6 +112,7 @@ st.markdown(
 col1, col2 = st.columns([5,5])
 
 col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
+
 form = col2.form
 
 with form('input_form'):
