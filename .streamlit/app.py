@@ -113,7 +113,7 @@ st.markdown(
     f'<p>{info}</p>',
     unsafe_allow_html=True
 )
-col2 = st.columns([5])
+col2 = st.columns(5)
 
 
 form = col2.form
