@@ -135,8 +135,7 @@ st.markdown(justified_text_style, unsafe_allow_html=True)
 
 info = """
 I am ChemAI who is your chemistry assistant which able to help with your homework and your questions specifically about periodic table.
-Ask me anything about elements in the periodic table and I will summarize the elements and give the picture of it.
-It also allows you to generate an image of the elements by using Stable Diffusion XL.
+Ask me anything about elements in the periodic table.
 """
 
 st.markdown("<h1 style='text-align: center; color: white;'>ChemAI</h1>", unsafe_allow_html=True)
