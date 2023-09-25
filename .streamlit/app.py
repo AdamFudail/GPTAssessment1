@@ -139,7 +139,7 @@ Ask me anything about elements in the periodic table and I will summarize the el
 It also allows you to generate an image of the elements by using Stable Diffusion XL.
 """
 
-st.markdown("<h1 style='text-align: center; color: white;'>ChemAI</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>ChemAI</h1>", unsafe_allow_html=True)
 col1, col2 = st.columns([5,5])
 
 col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
