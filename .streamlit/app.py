@@ -109,7 +109,10 @@ st.markdown(
 )
 
 
-
+st.markdown(
+    f'<p>{info}</p>',
+    unsafe_allow_html=True
+)
 col2 = st.columns([5])
 
 
