@@ -197,17 +197,6 @@ justified_text_style = '''
 '''
 st.markdown(justified_text_style, unsafe_allow_html=True)
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://images.unsplash.com/photo-1693498068361-7f07114e33cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80");
-background-size: cover;
-}
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 info = """
 I am ChemAI who is your chemistry assistant which able to help with your homework and your questions specifically about periodic table.
 Ask me anything about elements in the periodic table and I will summarize the elements and give the picture of it.
