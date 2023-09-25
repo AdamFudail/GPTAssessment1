@@ -101,7 +101,6 @@ title_style = """
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 10px;
 """
 
 col1, col2 = st.columns([5,5])
