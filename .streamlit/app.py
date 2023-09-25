@@ -101,8 +101,8 @@ title_style = """
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 """
 st.markdown(
     f'<h1 style="{title_style}">ChemAI</h1>',
