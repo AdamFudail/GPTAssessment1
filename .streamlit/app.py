@@ -95,7 +95,15 @@ I am ChemAI who is your chemistry assistant which able to help with your homewor
 Ask me anything about elements in the periodic table.
 """
 
-st.title('CHEMAI')
+title_style = """
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+"""
+
 col1, col2 = st.columns([5,5])
 
 col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
