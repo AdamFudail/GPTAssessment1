@@ -53,17 +53,28 @@ def element_ai(text_input):
     messages = [
         {
             "role":"system",
-            "content": element_gen
+            "content":"""
+                Generate a short summary for any element. This AI will output The name of an element,
+                The chemical symbol of an element,The atomic number of an element,The electron configuration of an element
+                The properties of an element, such as its atomic mass, density, and melting and boiling points depends on the user request.
+                This chat able to create summary of any elements in periodic table.
+                """
         },
 
         {
             "role":"user",
-            "content" : Element_user1
+            "content" : """
+                        Can you give me a summary of oxygen?
+                        """
         },
 
         {
             "role":"assistant",
-            "content": Element_response1
+            "content": """
+                        Oxygen is Earth's most abundant element, and after hydrogen and helium,
+                        it is the third-most abundant element in the universe. At standard temperature and pressure,
+                        two atoms of the element bind to form dioxygen, a colorless and odorless diatomic gas with the formula O. 2.
+                        """
         },
         {
             "role":"user",
