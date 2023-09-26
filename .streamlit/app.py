@@ -8,22 +8,11 @@ from stqdm import stqdm
 st.set_page_config(
     page_title="ChemAI",
 )
+# Access the OpenAI API key from the secrets.toml file
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
-with st.sidebar:
-  with st.form("API KEY"):
-    openai_api_key = st.text_input("OpenAI API key", value="", type="password")
-    st.caption("*If you don't have an OpenAI API key, get it [here](https://platform.openai.com/account/api-keys).*")
-    submitted_key = st.form_submit_button('Submit')
-
-
-
-if submitted_key:
-  try:
-      openai.api_key = openai_api_key
-      response = openai.Completion.create(engine="davinci", prompt="test")
-  except Exception as e:
-      st.warning(f'Invalid OpenAI API key: {e}')
-
+# Set the API key for OpenAI
+openai.api_key = openai_api_key
 
 
 #(A) Element Generator
@@ -133,8 +122,6 @@ with form('input_form'):
 
       text_inputs = [text_input]
 
-for i in stqdm(range(100), backend=True, frontend=True):
-      time.sleep(0.5)
 
 if submitted:
 
