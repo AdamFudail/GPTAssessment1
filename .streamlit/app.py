@@ -94,7 +94,7 @@ col1 = st.columns(10)
 
 st.sidebar.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
-form = col2.form
+form = col1.form
 
 with form('input_form'):
       text_input = st.text_area("Input your question here")
