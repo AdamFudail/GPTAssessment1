@@ -120,13 +120,19 @@ st.markdown(
 )
 
 
-st.sidebar.title(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>ChemAI</h1>", unsafe_allow_html=True)
+col1, col2 = st.columns([5,5])
 
-text_input = st.text_area("Input your question here")
-submitted = st.form_submit_button('Submit')
-text_inputs = [text_input]
+col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
+form = col2.form
 
+with form('input_form'):
+      text_input = st.text_area("Input your question here")
+
+      submitted = st.form_submit_button('Submit')
+
+      text_inputs = [text_input]
 
     for i in stqdm(range(100), backend=True, frontend=True):
       time.sleep(0.5)
