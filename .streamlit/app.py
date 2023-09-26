@@ -90,7 +90,7 @@ st.markdown(
 )
 
 
-col1 = st.columns(10)
+col1 = st.columns(5)
 
 st.sidebar.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
