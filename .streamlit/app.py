@@ -90,9 +90,9 @@ st.markdown(
 )
 
 
-col1, col2 = st.columns(5)
+col1 = st.columns(10)
 
-col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
+st.sidebar.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
 form = col2.form
 
