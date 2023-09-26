@@ -122,7 +122,7 @@ st.markdown(
 
 
 
-st.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
+st.sidebar.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
 
       text_input = st.text_area("Input your question here")
