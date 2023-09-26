@@ -134,7 +134,7 @@ with form('input_form'):
 
       text_inputs = [text_input]
 
-    for i in stqdm(range(100), backend=True, frontend=True):
+for i in stqdm(range(100), backend=True, frontend=True):
       time.sleep(0.5)
 
     element = element_ai(text_input)
