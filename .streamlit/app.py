@@ -15,27 +15,7 @@ openai_api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = openai_api_key
 
 
-#(A) Element Generator
-element_gen = """
-Generate a short summary for any element. This AI will output The name of an element,
-The chemical symbol of an element,The atomic number of an element,The electron configuration of an element
-The properties of an element, such as its atomic mass, density, and melting and boiling points depends on the user request.
-This chat able to create summary of any elements in periodic table.
-"""
-
-Element_user1 = """
-Can you give me a summary of oxygen?
-"""
-
-Element_response1 = """
-Oxygen is Earth's most abundant element, and after hydrogen and helium,
-it is the third-most abundant element in the universe. At standard temperature and pressure,
-two atoms of the element bind to form dioxygen, a colorless and odorless diatomic gas with the formula O. 2.
-"""
-
-
   #%%
-
 def element_ai(text_input):
     response = openai.ChatCompletion.create(
     model = "gpt-3.5-turbo",
@@ -85,6 +65,7 @@ justified_text_style = '''
 <style>
 .justified-text {
     text-align: justify;
+    font-family: "Times New Roman"
 }
 </style>
 '''
@@ -117,11 +98,8 @@ form = col2.form
 
 with form('input_form'):
       text_input = st.text_area("Input your question here")
-
       submitted = st.form_submit_button('Submit')
-
       text_inputs = [text_input]
-
 
 if submitted:
 
