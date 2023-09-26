@@ -136,8 +136,14 @@ with form('input_form'):
 for i in stqdm(range(100), backend=True, frontend=True):
       time.sleep(0.5)
 
-element = element_ai(text_input)
-st.markdown('**_Output:_** ')
-st.write(element)
+if submitted:
+
+
+    for i in stqdm(range(100), backend=True, frontend=True):
+      time.sleep(0.5)
+
+    element = element_ai(text_input)
+    st.markdown('**_Output:_** ')
+    st.write(element)
 
 
