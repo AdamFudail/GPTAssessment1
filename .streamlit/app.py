@@ -120,20 +120,17 @@ st.markdown(
 )
 
 
-col1, col2 = st.columns([5,5])
 
-col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
-form = col2.form
+st.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
-with form('input_form'):
+
       text_input = st.text_area("Input your question here")
 
       submitted = st.form_submit_button('Submit')
 
       text_inputs = [text_input]
 
-if submitted:
 
 
     for i in stqdm(range(100), backend=True, frontend=True):
