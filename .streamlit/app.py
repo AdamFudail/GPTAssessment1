@@ -97,7 +97,6 @@ with st.form(key='my_form'):
     
 if submitted:
 
-
     for i in stqdm(range(100), backend=True, frontend=True):
       time.sleep(0.5)
 
