@@ -125,11 +125,9 @@ st.markdown(
 st.sidebar.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
 
-      text_input = st.text_area("Input your question here")
-
-      submitted = st.form_submit_button('Submit')
-
-      text_inputs = [text_input]
+text_input = st.text_area("Input your question here")
+submitted = st.form_submit_button('Submit')
+text_inputs = [text_input]
 
 
 
