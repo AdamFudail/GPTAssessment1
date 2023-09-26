@@ -89,12 +89,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-
 st.sidebar.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
 with st.form(key='my_form'):
-      text_input = st.text_input("Input your question here")
+      text_input = st.text_area("Input your question here")
       submitted = st.form_submit_button('Submit')
       text_inputs = [text_input]
     
