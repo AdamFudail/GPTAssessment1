@@ -120,12 +120,9 @@ st.markdown(
 )
 
 
-st.markdown("<h1 style='text-align: center; color: white;'>ChemAI</h1>", unsafe_allow_html=True)
-col1, col2 = st.columns([5,5])
 
-col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
+st.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
-form = col2.form
 
 with form('input_form'):
       text_input = st.text_area("Input your question here")
