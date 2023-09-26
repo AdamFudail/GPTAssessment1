@@ -120,9 +120,11 @@ st.markdown(
 )
 
 
+col1, col2 = st.columns([5,5])
 
-st.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
+col1.markdown(f'<div class="justified-text">{info}</div>', unsafe_allow_html=True)
 
+form = col2.form
 
 with form('input_form'):
       text_input = st.text_area("Input your question here")
